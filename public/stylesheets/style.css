@@ -1,0 +1,49 @@
+#header{    height: 20%;
+  border:solid;}
+#logo{
+  height: 105px;
+  width: 210px;
+}
+#hlogo{
+  height: auto;
+  width: 50%;
+  float: left;
+
+}
+#hmenu{
+  height: auto;
+  width: 50%;
+  float: right;
+
+}
+#foo{
+  height: 150px;
+    background-repeat: no-repeat;
+background-size: cover;
+  width: 100%;
+}
+.table{
+  
+   margin-bottom: 0rem; 
+}
+#register{
+  height: 412px;
+  width: 35%;
+  float: left;
+  background-color: #343a40
+}
+#images{
+  height: 412px;
+  width: 65%;
+  float: right;
+}
+.carousel-inner img {
+  width: 100%;
+  height: 412px;
+}
+#err{
+  color:red;
+}
+#marks{
+  padding-top: 100px;
+    }

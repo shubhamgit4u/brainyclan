@@ -1,0 +1,51 @@
+doctype html
+head
+  title BrainyClan
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js')
+  link(rel='stylesheet' href='/stylesheets/style.css')
+header
+  #header
+    nav.navbar.navbar-expand-sm.bg-dark.navbar-dark
+      #hlogo
+        a.navbar-brand(href='#')
+          img#logo(src='/images/logo.jpg' alt='logo')
+      #hmenu
+        ul#ul1.navbar-nav.text-align-right.justify-content-end
+          li.nav-item.text-right
+            a.nav-link(href='/cpro') C Quiz
+          li.nav-item
+            a.nav-link(href='/apti') Aptitude
+          li.nav-item
+            a.nav-link(href='/login') logout
+h1 C Programming:
+form(action='/submit' method='post')
+  each n,i in res
+    table.table.table-striped
+      tr
+        th
+          p=n.q
+      tr
+        td
+          input(type='radio' name='q'+i value=n.opt1)
+          small=n.opt1
+          br
+      tr
+        td
+          input(type='radio' name='q'+i value=n.opt2)
+          small=n.opt2
+          br
+      tr
+        td
+          input(type='radio' name='q'+i value=n.opt3)
+          small=n.opt3
+          br
+      tr
+        td
+          input(type='radio' name='q'+i value=n.opt4)
+          small=n.opt4
+          br          
+  input(type='submit' value='submit')

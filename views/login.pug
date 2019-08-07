@@ -1,0 +1,74 @@
+doctype html
+head
+  title BrainyClan
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js')
+  link(rel='stylesheet' href='/stylesheets/style.css')
+header
+  #header
+    nav.navbar.navbar-expand-sm.bg-dark.navbar-dark
+      #hlogo
+        a.navbar-brand(href='#')
+          img#logo(src='/images/logo.jpg' alt='logo')
+      #hmenu
+        ul#ul1.navbar-nav.text-align-right.justify-content-end
+          li.nav-item.text-right
+            a.nav-link(href='/') Register
+          li.nav-item
+            a.nav-link(href='/login') Login
+div
+  #register
+    table.table.table-striped.table-dark
+      tr
+        td(text-align='center')
+          center
+            h1
+              span.badge.badge-secondary Login here!!
+      tr 
+        td
+          small
+            p#err=message
+      form(action='log' method='post')
+        tr
+          th  Email 
+        tr
+          td
+            input#txt4(type='text' placeholder='abc@gmail.com' name='email' required='')
+        tr
+          th Password
+        tr
+          td
+            input#txt1(type='password' placeholder='Password' name='password' required='')
+        td
+          input#txt6(type='submit' value='Login' name='txt6')
+        br
+  #images
+    #demo.carousel.slide(data-ride='carousel')
+      ul.carousel-indicators
+        li.active(data-target='#demo' data-slide-to='0')
+        li(data-target='#demo' data-slide-to='1')
+        li(data-target='#demo' data-slide-to='2')
+      .carousel-inner
+        .carousel-item.active
+          img(src='/images/img2.png' alt='quiz' width='1100' height='500')
+          .carousel-caption
+            h3 Quiz Game
+            p Participate in quiz and improve yourself
+        .carousel-item
+          img(src='/images/img3.jpg' alt='c programming' width='1100' height='500')
+          .carousel-caption
+            h3 C Programming
+            p Participate in Quiz on c programming and enhance your skill!
+        .carousel-item
+          img(src='/images/image4.png' alt='New York' width='1100' height='500')
+          .carousel-caption
+            h3 Qantative Aptitude
+            p Participate in Aptitude on c programming and enhance your skill!
+      a.carousel-control-prev(href='#demo' data-slide='prev')
+        span.carousel-control-prev-icon
+      a.carousel-control-next(href='#demo' data-slide='next')
+        span.carousel-control-next-icon
+img#foo(src='/images/foo2.jpg' alt='logo')
